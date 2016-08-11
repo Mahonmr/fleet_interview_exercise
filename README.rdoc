@@ -2,7 +2,7 @@
 
 By: Mike Mahoney
 
-This is an exercise that will test a candidate’s basic knowledge of Ruby on Rails.  The requirements are as follows
+This is an exercise that will test a candidate’s basic knowledge of Ruby on Rails. This app was build with Rails version Rails 4.2.6 and ruby version 2.0.0p247 with MySql Ver 14.14 Distrib 5.6.21  The requirements are as follows
 
 * Import a CSV and save data to table
 * Display data in a table format
@@ -16,7 +16,7 @@ This is an exercise that will test a candidate’s basic knowledge of Ruby on Ra
 
 Installation
 
-Install ping pong by cloning this repository:
+Install Fleet Interview Exercise by cloining this repository:
 
 https://github.com/Mahonmr/epicodus_test.git
 License
