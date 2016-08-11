@@ -18,7 +18,14 @@ Installation
 
 Install Fleet Interview Exercise by cloining this repository:
 
-https://github.com/Mahonmr/epicodus_test.git
-License
+https://github.com/Mahonmr/fleet_interview_exercise.git
+
+Then update the config/database.yml file with the correct password for MySql
+Then do following on the commond line
+* rake db:create
+* rake db:migrate
+* rails s
+Open up your browser to localhost:3000
+
 
 MIT License, Copyright 2015 Epicodus
