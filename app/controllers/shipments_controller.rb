@@ -17,7 +17,6 @@ class ShipmentsController < ApplicationController
       format.html { redirect_to shipments_path }
       format.js
     end
-
   end
 
   def import
