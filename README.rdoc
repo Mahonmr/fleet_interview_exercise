@@ -4,15 +4,16 @@ By: Mike Mahoney
 
 This is an exercise that will test a candidate’s basic knowledge of Ruby on Rails.  The requirements are as follows
 
+* Import a CSV and save data to table
+* Display data in a table format
+* Using CSS, the entire row should should change background color on hover
+* rows should have the ability to be toggled to an active/selected state.
+* Display the total shipment value of active rows below the table.
+* Display busiest origin and destination
+* For each origin and destination display the number of shipments
+* Data should be formatted for example, currency should have two decimal places.
+* Use git to track your changes
 
-
-Ping Pong is a sample JavaScript Application for demonstrating basic proficiency in JavaScript, Jquery, Git, Markdown, HTML, Bootstrap, CSS and BDD.
-
-A user enters a number and is shown a range of numbers from 1 to the number entered with the following execptions:
-
-Numbers divisible by 3 are replaced with "Ping"
-Numbers divisible by 5 are replaced with "Pong"
-Numbers divisible by 15 are replaced with "PingPong"
 Installation
 
 Install ping pong by cloning this repository:
