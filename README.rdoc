@@ -1,28 +1,23 @@
-== README
+ Fleet Interview Exercise
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+By: Mike Mahoney
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+This is an exercise that will test a candidate’s basic knowledge of Ruby on Rails.  The requirements are as follows
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+
+Ping Pong is a sample JavaScript Application for demonstrating basic proficiency in JavaScript, Jquery, Git, Markdown, HTML, Bootstrap, CSS and BDD.
+
+A user enters a number and is shown a range of numbers from 1 to the number entered with the following execptions:
+
+Numbers divisible by 3 are replaced with "Ping"
+Numbers divisible by 5 are replaced with "Pong"
+Numbers divisible by 15 are replaced with "PingPong"
+Installation
+
+Install ping pong by cloning this repository:
+
+https://github.com/Mahonmr/epicodus_test.git
+License
+
+MIT License, Copyright 2015 Epicodus
