@@ -2,7 +2,7 @@
 
 By: Mike Mahoney
 
-This is an exercise that will test a candidate’s basic knowledge of Ruby on Rails. This app was build with Rails version Rails 4.2.6 and ruby version 2.0.0p247 with MySql Ver 14.14 Distrib 5.6.21  The requirements are as follows
+This is an exercise that will test a candidate’s basic knowledge of Ruby on Rails. This app was built with Rails 4.2.6 and ruby 2.0.0p247. The database used for the project is MySql Ver 14.14 Distrib 5.6.21  The requirements are as follows
 
 * Import a CSV and save data to table
 * Display data in a table format
@@ -22,6 +22,7 @@ https://github.com/Mahonmr/fleet_interview_exercise.git
 
 Then update the config/database.yml file with the correct password for MySql
 Then do following on the commond line
+* bundle install
 * rake db:create
 * rake db:migrate
 * rails s
