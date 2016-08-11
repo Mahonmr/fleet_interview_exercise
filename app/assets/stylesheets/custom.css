@@ -28,3 +28,11 @@ table tr td br{
 hr.style1{
   border-top: 3px solid #40e0d0;
 }
+
+.fa-star {
+  color: grey;
+}
+
+.yellow {
+  color: orange;
+}
