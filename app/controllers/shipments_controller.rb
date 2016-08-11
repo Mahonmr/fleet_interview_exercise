@@ -4,11 +4,12 @@ class ShipmentsController < ApplicationController
 
   def index
     @shipments = Shipment.all
+    @origin_shipments = Shipment.origin.sort_by {|k,v| v}.reverse
+    @distination_shipments = Shipment.destination.sort_by {|k,v| v}.reverse
   end
 
   def activate
     if @shipment.update_attribute(:active, 1)
-      @notice = "Shipment activated"
     else
       flash[:alert] = "Shipment was not activated"
       redirect_to shipments_path
@@ -21,7 +22,8 @@ class ShipmentsController < ApplicationController
 
   def import
     Shipment.import(params[:file])
-    redirect_to root_url, notice: "Shipments imported."
+    flash[:success] = "Shipments imported."
+    redirect_to root_url
   end
 
   private

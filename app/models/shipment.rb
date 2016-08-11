@@ -3,7 +3,7 @@ class Shipment < ActiveRecord::Base
 
   scope :active_shipments, -> { Shipment.where('active = ?', true) }
   scope :origin, -> { Shipment.group(:origin).count }
-  scope :destination, -> { Shipment.group(:destination).count }
+  scope :destination, -> { (Shipment.group(:destination).count) }
 
   def self.import(file)
     CSV.foreach(file.path, headers: true) do |row|

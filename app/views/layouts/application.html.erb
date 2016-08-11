@@ -1,12 +1,46 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>FleetInterviewExercise</title>
+  <title>Fleet Interview Exercise</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+
+  <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <div class="navbar-brand">
+        <p>Fleet Interview Exercise</p>
+      </div>
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+      <ul class="nav navbar-nav navbar-right">
+        <div>
+          <h3>Import a CSV File</h3>
+          <%= form_tag import_shipments_path, multipart: true do %>
+            <%= file_field_tag :file %>
+            <%= submit_tag "Import CSV" %>
+          <% end %>
+        </div>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container" id="flash-messages">
+  <% flash.each do |key, value| %>
+    <%= render 'layouts/flash', key: key, value: value %>
+  <% end %>
+</div>
 
 <div class="container">
   <%= yield %>
