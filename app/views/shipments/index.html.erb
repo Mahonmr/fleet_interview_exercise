@@ -1,7 +1,4 @@
-<%= flash[:notice] %>
-
 <hr class="style1">
-
 
 <ul class="nav nav-tabs">
   <li class="active">
@@ -14,7 +11,10 @@
     <a href="#busiest_d" data-toggle="tab" aria-expanded="false">Busiest Destination</a>
   </li>
   <li>
-    <a href="#number" data-toggle="tab" aria-expanded="false">Number of Shipments</a>
+    <a href="#shipment_origin" data-toggle="tab" aria-expanded="false">Number of Shipments (Origin)</a>
+  </li>
+  <li>
+    <a href="#shipment_destination" data-toggle="tab" aria-expanded="false">Number of Shipments (Distination)</a>
   </li>
 </ul>
 
@@ -28,15 +28,10 @@
   <div class="tab-pane" id="busiest_d">
     <%= render 'distination' %>
   </div>
-  <div class="tab-pane" id="number">
-    <%#= render 'clubs', object: @my_clubs %>
+  <div class="tab-pane" id="shipment_origin">
+    <%= render 'origin_summary' %>
   </div>
-</div>
-
-<div>
-  <h3>Import a CSV File</h3>
-  <%= form_tag import_shipments_path, multipart: true do %>
-    <%= file_field_tag :file %>
-    <%= submit_tag "Import CSV" %>
-  <% end %>
+  <div class="tab-pane" id="shipment_destination">
+    <%= render 'distination_summary' %>
+  </div>
 </div>

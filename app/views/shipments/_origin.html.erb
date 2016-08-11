@@ -1,4 +1,7 @@
-
-<div class="well">
-  <h1><%= Shipment.busiest_origin %></h1>
-</div>
+<% if Shipment.any? %>
+  <div class="well">
+    <h1><%= Shipment.busiest_origin %></h1>
+  </div>
+<% else %>
+  <h1>No shipments imported</h1>
+<% end %>

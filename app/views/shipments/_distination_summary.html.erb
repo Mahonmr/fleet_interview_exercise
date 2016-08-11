@@ -1,0 +1,16 @@
+<table class="table table-striped table-hover">
+  <thead class="header">
+    <tr>
+      <th>Distination</th>
+      <th>Shipments</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @distination_shipments.each do |key, value| %>
+      <tr>
+        <td><%= key %></td>
+        <td><%= value %></td>
+      </tr>
+    <% end %>
+  <tbody>
+</table>
