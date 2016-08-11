@@ -1,0 +1,22 @@
+
+default: &default
+  adapter: mysql2
+  encoding: utf8
+  pool: 5
+  username: root
+  password: nike12
+  socket: /tmp/mysql.sock
+
+development:
+  <<: *default
+  database: fleet_interview_exercise_development
+
+test:
+  <<: *default
+  database: fleet_interview_exercise_test
+
+production:
+  <<: *default
+  database: fleet_interview_exercise_production
+  username: fleet_interview_exercise
+  password: <%= ENV['FLEET_INTERVIEW_EXERCISE_DATABASE_PASSWORD'] %>

@@ -1,0 +1,30 @@
+table{
+  table-layout: fixed;
+}
+
+table tr th {
+  color: #808080;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+table tr td{
+  font-size: 13px;
+  font-weight: bold;
+}
+
+table tr td br{
+  color: #808080;
+}
+
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+  background-color: yellow;
+}
+
+.grey{
+  color: #808080;
+}
+
+hr.style1{
+  border-top: 3px solid #40e0d0;
+}
