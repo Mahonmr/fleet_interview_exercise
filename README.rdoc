@@ -21,7 +21,7 @@ Install Fleet Interview Exercise by cloining this repository:
 https://github.com/Mahonmr/fleet_interview_exercise.git
 
 Then update the config/database.yml file with the correct password for MySql
-Then do following on the commond line
+Then do following on the command line
 * bundle install
 * rake db:create
 * rake db:migrate
